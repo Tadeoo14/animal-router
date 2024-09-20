@@ -18,7 +18,7 @@ function App() {
       </Route>
 
 
-      <Route>
+      <Route path='/*'>
         <h1>404 NOT FOUND</h1>
         <Link to='/'>Volver</Link>
       </Route>
