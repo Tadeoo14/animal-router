@@ -1,5 +1,6 @@
 import  { Link } from 'wouter';
 import { ANIMALS } from '../../data';
+import { Suspense } from 'react';
 
 export default function ListOfAnimals() {
   return (
@@ -7,7 +8,7 @@ export default function ListOfAnimals() {
         <Link to="/" >Volver a la pagina principal</Link>
         <h2>List Of Animals:</h2>
         <ul>{ANIMALS.map(a =>(
-            <li key={a.id}>
+          <li key={a.id}>
                 <Link to={`/animals/${a.id}`}>{a.name}</Link>
             </li>
         ))}</ul>
